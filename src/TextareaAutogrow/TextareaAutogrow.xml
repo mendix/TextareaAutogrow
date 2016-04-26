@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="TextareaAutogrow.widget.TextareaAutogrow" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>TextareaAutogrow</name>
+    <description></description>
+
+    <icon>
+	iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2Fy
+	ZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAU9JREFUeNqcU7tKxFAQndzcPLBLuhDQ
+	xsL0FkI+II2mDttbSUotA1bWVoL5gWBtkw/ID1gLgQXXykLBvHQT74wksGCyWQ9M
+	zsww5zCX3CvDL45FnImQehZYMcYwGQ1FUQBUVYV+UOACGes5gVpJ1/VF27b7qG6a
+	phJNHWZCmCy5YRh2lmU32EiSBIIgGBU8v7QQPwKcnwIc2gxc171ilmV99yuVZTm5
+	8u3DJ+i8JMaatKZptv1AVVWTBneXBixXH8RYo5ZrmtbJskwrokGfj6EoimEGtTsb
+	lOWEQV3XWw3q+mvDgOEnz3MIwxA8zyNO0xQ453/Get0NOW0g/nvnOA7EcUyuvu9P
+	biBJMokRqCWDbWtvXh5tOAIZiPu8k4Gq7g0GqGX4ILAxJ04WT3Bgm8RYo5aJ83Rz
+	H8/99RG8vSvEWKNWiqIIn68F/8PrjwADAPYuaiG/170VAAAAAElFTkSuQmCC
+  </icon>
+
+  <properties>
+		<property key="name" type="attribute" required="true" isPath="optional" pathType="reference">
+		  <caption>Attribute</caption>
+		  <category>Data source</category>
+		  <description>The attribute to manipulate</description> 
+		  <attributeTypes>
+			<attributeType name="String"/> 
+		  </attributeTypes>
+		</property>
+		<property key="minSize" type="integer" defaultValue="5">
+		  <caption>Minimum lines</caption>
+		  <category>Appearance</category>
+		  <description>The minimum amount of lines to display.</description> 
+		</property>
+		<property key="maxSize" type="integer" defaultValue="0">
+		  <caption>Maximum lines</caption>
+		  <category>Behavior</category>
+		  <description>The maximum amount of lines that are to be added, 0 means no maximum.</description> 
+		</property>
+		<property key="grabfocus" type="boolean" defaultValue="false">
+		  <caption>Grab focus</caption>
+		  <category>Behavior</category>
+		  <description>If true, the textarea grabs the focus whenever its contents is updated.</description> 
+		</property>
+        
+        <property key="onchangemf" type="microflow" required="false">
+            <caption>On change microflow</caption>
+            <category>Behavior</category>
+            <description>Optional: The microflow to execute on change.</description> 
+            <returnType type="Void"/>
+        </property>
+	</properties>
+</widget>
+
